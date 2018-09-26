@@ -1,0 +1,74 @@
+command:run
+options:
+args: /scratch/jm9yq/tensorflow-1.6.0-py36.simg preprocess_GridSearch.py
+SINGULARITYENV_LD_LIBRARY_PATH=/apps/software/standard/core/cuda/9.0.176/lib64:/apps/software/standard/core/cudnn/7.0.5/lib64 singularity run --nv --bind /apps/software/standard/core/cuda/9.0.176 --bind /apps/software/standard/core/cudnn/7.0.5 /scratch/jm9yq/tensorflow-1.6.0-py36.simg preprocess_GridSearch.py
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 21.0min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed: 41.1min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed: 60.1min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed: 78.8min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed: 97.2min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   6 out of   6 | elapsed: 115.6min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   7 out of   7 | elapsed: 134.0min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed: 152.4min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed: 170.6min remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  20 out of  20 | elapsed: 368.6min finished
+/opt/conda/lib/python3.6/site-packages/sklearn/model_selection/_search.py:761: DeprecationWarning: The grid_scores_ attribute was deprecated in version 0.18 in favor of the more elaborate cv_results_ attribute. The grid_scores_ attribute will not be available from 0.20
+  DeprecationWarning)
+Full Data set created.
+Label enconding processes in 33.522449 seconds
+One-Hot encoding processes in 2.125903 seconds
+(313864, 1190)
+Fitting 4 folds for each of 5 candidates, totalling 20 fits
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1632.0589469363877, total=20.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1652.0598795847932, total=19.5min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1642.013664945366, total=18.3min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.001, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1643.636082496579, total=18.2min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1137.341983451383, total=17.8min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1140.5261025855261, total=17.8min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1137.6438206313621, total=17.8min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.01, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1136.7465298191541, total=17.8min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1134.933185906189, total=17.6min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1138.3266496107026, total=17.6min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1135.7128299856731, total=17.5min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.02, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1134.6231582405971, total=17.6min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1139.442507040771, total=17.5min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1143.5552652027839, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1140.9784759645815, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.05, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1140.038154529716, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1149.5842964366047, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1155.3885375333543, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1150.7507231431935, total=17.4min
+[CV] colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78 
+[CV]  colsample_bytree=0.67, gamma=0.9, learning_rate=0.1, max_depth=9, min_child_weight=50, n_estimators=1500, nthread=-1, objective=<function logregobj at 0x7fcead369ea0>, seed=1234, subsample=0.78, score=-1154.7125184668716, total=17.4min
+params:
+
+[{'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.001, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.01, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.02, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.05, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.1, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}]
+mean test scores:
+
+[-1642.44213943 -1138.06461836 -1135.8989637  -1141.00360594 -1152.60901759]
+std test scores:
+
+[ 7.10497735  1.45735921  1.45677433  1.57168761  2.48760622]
+Best score: -1135.899
+Best parameters set: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.02, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}
+Scores: [mean: -1642.44214, std: 7.10494, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.001, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, mean: -1138.06462, std: 1.45735, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.01, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, mean: -1135.89896, std: 1.45677, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.02, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, mean: -1141.00361, std: 1.57168, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.05, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}, mean: -1152.60902, std: 2.48760, params: {'colsample_bytree': 0.67, 'gamma': 0.9, 'learning_rate': 0.1, 'max_depth': 9, 'min_child_weight': 50, 'n_estimators': 1500, 'nthread': -1, 'objective': <function logregobj at 0x7fcead369ea0>, 'seed': 1234, 'subsample': 0.78}]
+**********************************************
